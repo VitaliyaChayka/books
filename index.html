@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <!-- <link rel="stylesheet" type="text/css" href="./src/slick/slick-theme.css" /> -->
+   <link rel="stylesheet" type="text/css" href="./src/slick/slick.css" />
+   <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.css">
+   <link rel="stylesheet" href="./src/style.css">
+   <title>Only books</title>
+</head>
+
+<body>
+   <main class="main">
+      <header class="header">
+         <div class="container">
+            <div class="header__body">
+               <div class="header__body_top">
+
+                  <div class="header__phone phone">
+                     <p class="phone__text">Calls are free of charge </p>
+                     <a class="phone__number" href="tel:0-800-600-505">0-800-600-505 </a>
+                  </div>
+
+                  <div class="header__burger">
+                     <span></span>
+                  </div>
+
+                  <nav class="nav">
+                     <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link">Book Listing</a> </li>
+                        <li class="nav__item"><a href="#woman" class="nav__link">Single Book</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="#last" class="nav__link">Login</a></li>
+                     </ul>
+                  </nav>
+               </div>
+
+               <div class="header__body_bottom">
+
+                  <div class="header__logo">
+                     <a href="index.html" title="Logo">
+                        <svg class="logo" viewBox="0 0 114 81">
+                           <use xlink:href="sprite.svg#logo"></use>
+                        </svg>
+                     </a>
+                  </div>
+
+                  <div class="header__form">
+
+                     <button type="button" class="btn btn-primary btn__all-books ">
+                        <a href=" index.html" class="btn__all-books_link">
+                           <svg class="category" viewBox="0 0 20 20">
+                              <use xlink:href="sprite.svg#category"></use>
+                           </svg>
+                        </a>
+                        <span>All Books</span>
+                     </button>
+
+                     <div class="input-group mb-3 inner-addon header__input">
+                        <!-- <i class="bi bi-search"></i> -->
+                        <span class="icon">
+                           <svg class="search" viewBox="0 0 20 20">
+                              <use xlink:href="sprite.svg#search"></use>
+                           </svg>
+                        </span>
+                        <input type="search" class="form-control header__input_search" placeholder="I’m looking for..."
+                           aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary input__btn" type="button"
+                           id="button-addon2">Search</button>
+                     </div>
+                  </div>
+
+                  <div class="header__icons">
+
+                     <div class="header__badge-save position-relative">
+                        <a href="index.html">
+                           <svg class="save" viewBox="0 0 22 30">
+                              <use xlink:href="sprite.svg#save"></use>
+                           </svg>
+                        </a>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"> 3
+                           <span class="visually-hidden">Выбрано</span>
+                        </span>
+                     </div>
+
+                     <div class="header__badge-cart  position-relative">
+                        <a href="index.html">
+                           <svg class="cart" viewBox="0 0 34 34">
+                              <use xlink:href="sprite.svg#cart"></use>
+                           </svg>
+                        </a>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"> 4
+                           <span class="visually-hidden">В корзине</span>
+                        </span>
+                     </div>
+                  </div>
+
+               </div>
+
+            </div>
+         </div>
+      </header>
+
+      <!-- home page -->
+      <section class="home">
+         <div class="container">
+            <div class="home__body">
+               <div class="row">
+                  <div class="home__menu col-xl-3">
+                     <div class="list-group dropdown__list">
+
+                        <div class="btn-group dropend ">
+                           <button type="button" class="btn btn-secondary dropdown-toggle dropdown__btn"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              Books
+                           </button>
+                           <ul class="dropdown-menu ">
+                              <li><a class="dropdown-item active" href="#best">Best Sellers</a></li>
+                              <li><a class="dropdown-item" href="#related">Book related</a></li>
+                              <li><a class="dropdown-item" href="#releases">Hot New Releases</a></li>
+                           </ul>
+                        </div>
+
+                        <a href="#" class="list-group-item list-group-item-action dropdown-item">Popular</a>
+                        <a href="#" class="list-group-item list-group-item-action dropdown-item">Sale</a>
+                        <a href="#" class="list-group-item list-group-item-action dropdown-item">New</a>
+
+                     </div>
+
+
+
+                  </div>
+
+                  <div class="home__slider col-xl-9 ">
+                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                              class="active" aria-current="true" aria-label="Slide 1"></button>
+                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                              aria-label="Slide 2"></button>
+                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                              aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                           <div class="carousel-item active">
+                              <img src="./images/Banner1.jpg" class="d-block w-100 img-fluid carousel__img "
+                                 alt="banner">
+                           </div>
+                           <div class="carousel-item">
+                              <img src="./images/Banner12.jpg" class="d-block w-100 img-fluid carousel__img"
+                                 alt="banner">
+                           </div>
+                           <div class="carousel-item">
+                              <img src="./images/Banner13.jpg" class="d-block w-100 img-fluid carousel__img"
+                                 alt="banner">
+                           </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                           data-bs-slide="prev">
+                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                           data-bs-slide="next">
+                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Следующий</span>
+                        </button>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Best Sellers -->
+      <section class="best-sellers" id="best">
+         <div class="container">
+            <div class="best-sellers__body">
+
+               <h2 class="title best-sellers__title">Best Sellers</h2>
+               <div class="row">
+                  <div class="card-slider">
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book1.png" class="card-img-top w-100 card__img" alt="book">
+                        <div class="card__label card__label_popular"> Popular</div>
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">One Vote Away</h5>
+                           <p class="card-text card__text">Ted Cruz</p>
+
+                           <div class="card__block">
+                              <p class="card-price">17.39$</p>
+                              <div class="card__stars">
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star whiteStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#whiteStar"></use>
+                                 </svg>
+                              </div>
+                           </div>
+
+                           <div class="card__buttons">
+                              <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                              <a href="#" class="btn__save">
+                                 <svg class="save-btn" viewBox="0 0 14 18">
+                                    <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                 </svg>
+                              </a>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book2.png" class="card-img-top w-100 card__img" alt="book">
+                        <div class="card__label card__label_popular">Popular</div>
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">7 Secrets of Persuasion </h5>
+                           <p class="card-text card__text">Ina Garten</p>
+
+                           <div class="card__block">
+                              <p class="card-price">12.00$</p>
+                              <div class="card__stars">
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star whiteStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#whiteStar"></use>
+                                 </svg>
+                              </div>
+                           </div>
+
+                           <div class="card__buttons">
+                              <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                              <a href="#" class="btn__save">
+                                 <svg class="save-btn" viewBox="0 0 14 18">
+                                    <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                 </svg>
+                              </a>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book3.png" class="card-img-top w-100" alt="book">
+                        <div class="card__label card__label_popular">Popular</div>
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">American Dirt</h5>
+                           <p class="card-text card__text">Jeanine Cummins</p>
+
+                           <div class="card__block">
+                              <p class="card-price">16.00$</p>
+                              <div class="card__stars">
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star whiteStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#whiteStar"></use>
+                                 </svg>
+                              </div>
+                           </div>
+
+                           <div class="card__buttons">
+                              <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                              <a href="#" class="btn__save">
+                                 <svg class="save-btn" viewBox="0 0 14 18">
+                                    <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                 </svg>
+                              </a>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book4.png" class="card-img-top w-100" alt="book">
+                        <div class="card__label card__label_popular">Popular</div>
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title" Surviving The Forest</h5>
+                              <p class="card-text card__text">Adiva Geffen</p>
+
+                              <div class="card__block">
+                                 <p class="card-price">22.99$</p>
+                                 <div class="card__stars">
+                                    <svg class="star blackStar" viewBox="0 0 19 18">
+                                       <use xlink:href="sprite.svg#blackStar"></use>
+                                    </svg>
+                                    <svg class="star blackStar" viewBox="0 0 19 18">
+                                       <use xlink:href="sprite.svg#blackStar"></use>
+                                    </svg>
+                                    <svg class="star blackStar" viewBox="0 0 19 18">
+                                       <use xlink:href="sprite.svg#blackStar"></use>
+                                    </svg>
+                                    <svg class="star blackStar" viewBox="0 0 19 18">
+                                       <use xlink:href="sprite.svg#blackStar"></use>
+                                    </svg>
+                                    <svg class="star whiteStar" viewBox="0 0 19 18">
+                                       <use xlink:href="sprite.svg#whiteStar"></use>
+                                    </svg>
+                                 </div>
+                              </div>
+
+                              <div class="card__buttons">
+                                 <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                                 <a href="#" class="btn__save">
+                                    <svg class="save-btn" viewBox="0 0 14 18">
+                                       <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                    </svg>
+                                 </a>
+                              </div>
+
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book5.png" class="card-img-top w-100" alt="book">
+                        <div class="card__label card__label_popular">Popular</div>
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">The Secrets We Keep</h5>
+                           <p class="card-text card__text">Kate Hewitt</p>
+
+                           <div class="card__block">
+                              <p class="card-price">10.50$</p>
+                              <div class="card__stars">
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star whiteStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#whiteStar"></use>
+                                 </svg>
+                              </div>
+                           </div>
+
+                           <div class="card__buttons">
+                              <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                              <a href="#" class="btn__save">
+                                 <svg class="save-btn" viewBox="0 0 14 18">
+                                    <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                 </svg>
+                              </a>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book3.png" class="card-img-top w-100" alt="book">
+                        <div class="card__label card__label_popular">Popular</div>
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">American Dirt</h5>
+                           <p class="card-text card__text">Jeanine Cummins</p>
+
+                           <div class="card__block">
+                              <p class="card-price">16.00$</p>
+                              <div class="card__stars">
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star whiteStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#whiteStar"></use>
+                                 </svg>
+                              </div>
+                           </div>
+
+                           <div class="card__buttons">
+                              <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                              <a href="#" class="btn__save">
+                                 <svg class="save-btn" viewBox="0 0 14 18">
+                                    <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                 </svg>
+                              </a>
+                           </div>
+
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+      </section>
+
+      <!-- Hot New Releases -->
+      <section class="releases" id="releases">
+         <div class="container">
+            <div class="releases__body">
+
+               <h2 class="title releases__title"> Hot New Releases</h2>
+               <div class="row">
+                  <div class="card-slider">
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book6.png" class="card-img-top w-100" alt="book">
+                        <div class="card__label card__label_new">New</div>
+
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">The Dip</h5>
+                           <p class="card-text card__text">Seth Godin</p>
+
+                           <div class="card__block">
+                              <p class="card-price">17.00$</p>
+                              <div class="card__stars">
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star whiteStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#whiteStar"></use>
+                                 </svg>
+                              </div>
+                           </div>
+
+                           <div class="card__buttons">
+                              <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                              <a href="#" class="btn__save">
+                                 <svg class="save-btn" viewBox="0 0 14 18">
+                                    <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                 </svg>
+                              </a>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book7.png" class="card-img-top w-100" alt="book">
+                        <div class="card__label card__label_new">New</div>
+
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">A Promised Land</h5>
+                           <p class="card-text card__text">Barack Obama</p>
+
+                           <div class="card__block">
+                              <p class="card-price">27.00$</p>
+                              <div class="card__stars">
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                              </div>
+                           </div>
+
+                           <div class="card__buttons">
+                              <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                              <a href="#" class="btn__save">
+                                 <svg class="save-btn" viewBox="0 0 14 18">
+                                    <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                 </svg>
+                              </a>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book8.png" class="card-img-top w-100" alt="book">
+                        <div class="card__label card__label_new">New</div>
+
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">The Office</h5>
+                           <p class="card-text card__text">Robb Pearlman</p>
+
+                           <div class="card__block">
+                              <p class="card-price">12.00$</p>
+                              <div class="card__stars">
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star whiteStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#whiteStar"></use>
+                                 </svg>
+                              </div>
+                           </div>
+
+                           <div class="card__buttons">
+                              <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                              <a href="#" class="btn__save">
+                                 <svg class="save-btn" viewBox="0 0 14 18">
+                                    <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                 </svg>
+                              </a>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book9.png" class="card-img-top w-100" alt="book">
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">The Return</h5>
+                           <p class="card-text card__text">Nicholas Sparks</p>
+
+                           <div class="card__block">
+                              <p class="card-price">16.00$</p>
+                              <div class="card__stars">
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                              </div>
+                           </div>
+
+                           <div class="card__buttons">
+                              <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                              <a href="#" class="btn__save">
+                                 <svg class="save-btn" viewBox="0 0 14 18">
+                                    <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                 </svg>
+                              </a>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book10.png" class="card-img-top w-100" alt="book">
+                        <div class="card__label card__label_new">New</div>
+
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">7 Secrets of Persuasion </h5>
+                           <p class="card-text card__text">Kristin Cavallari</p>
+
+                           <div class="card__block">
+                              <p class="card-price">17.52$</p>
+                              <div class="card__stars">
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star whiteStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#whiteStar"></use>
+                                 </svg>
+                              </div>
+                           </div>
+
+                           <div class="card__buttons">
+                              <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                              <a href="#" class="btn__save">
+                                 <svg class="save-btn" viewBox="0 0 14 18">
+                                    <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                 </svg>
+                              </a>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book8.png" class="card-img-top w-100" alt="book">
+                        <div class="card__label card__label_new">New</div>
+
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">The Office</h5>
+                           <p class="card-text card__text">Robb Pearlman</p>
+
+                           <div class="card__block">
+                              <p class="card-price">12.00$</p>
+                              <div class="card__stars">
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star whiteStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#whiteStar"></use>
+                                 </svg>
+                              </div>
+                           </div>
+
+                           <div class="card__buttons">
+                              <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                              <a href="#" class="btn__save">
+                                 <svg class="save-btn" viewBox="0 0 14 18">
+                                    <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                 </svg>
+                              </a>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+      </section>
+
+      <!-- Book of the Week -->
+      <section class="book-week">
+         <div class="container">
+            <div class="book-week__body">
+               <img src="./images/Banner2.jpg" class="img-fluid book-week__img w-100 " alt="banner">
+
+               <div class="book-week__sides">
+                  <div class="book-week__left ">
+                     <div class="book-week__left_side left-side">
+
+                        <div class="left-side__info"><span> Book of the Week</span></div>
+
+                        <h2 class="left-side__title">Elsewhere</h2>
+                        <p class="left-side__subtitle">by Dean Koontz</p>
+                        <p class="left-side__price">$18.99 </p>
+                        <p class="left-side__text">The fate of the world is in the hands of a father and daughter in
+                           an
+                           epic novel of wonder and
+                           terror by Dean Koontz, the #1 New York Times bestselling master of suspense.</p>
+                        <a href="#" class="left-side__btn ">View Details</a>
+                     </div>
+                  </div>
+
+                  <div class="book-week__right">
+                     <div class="book-week__right_side right-side">
+                        <img src="./images/img1.png" class="img-fluid w-100 " alt="book">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </section>
+
+      <!-- The Best Books of 2020 -->
+      <section class="best-book">
+         <div class="container">
+            <div class="best-book__body">
+               <h2 class="title best-book__title">The Best Books of 2020 </h2>
+
+               <div class="row">
+
+                  <div class="col-lg-3 ">
+
+                     <div class="list-group  list-group-flush">
+                        <a href="#" class="list-group-item list-group-item-action dropdown-item drop-item "
+                           aria-current="true">Paper
+                           Books</a>
+                        <a href="#" class="list-group-item list-group-item-action dropdown-item drop-item">E-Books</a>
+                        <a href="#" class="list-group-item list-group-item-action dropdown-item drop-item">Audio
+                           Books</a>
+                     </div>
+                  </div>
+
+                  <div class="col-lg-9 d-flex best-book-slider">
+
+                     <div class="card mx-3" style="width: 9.125rem;">
+                        <img src="/images/best1.png" class="card-img-top w-100" alt="book">
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">The Dancing Girls</h5>
+                           <p class="card-text card__text">M.M. Chouinard</p>
+                           <p class="card-price card-price__best">13.00$</p>
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 9.125rem;">
+                        <img src="/images/best2.png" class="card-img-top w-100" alt="book">
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">Zombies’ Day</h5>
+                           <p class="card-text card__text">PopularMMOs</p>
+                           <p class="card-price card-price__best">13.00$</p>
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 9.125rem;">
+                        <img src="/images/best3.png" class="card-img-top w-100" alt="book">
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">The Calculating Stars</h5>
+                           <p class="card-text card__text">Mary Robinette Kowal</p>
+                           <p class="card-price card-price__best">12.79$</p>
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 9.125rem;">
+                        <img src="/images/best4.png" class="card-img-top w-100" alt="book">
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">The Obelisk Gate</h5>
+                           <p class="card-text card__text">N. K. Jemisin</p>
+                           <p class="card-price card-price__best">13.00$</p>
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 9.125rem;">
+                        <img src="/images/best5.png" class="card-img-top w-100" alt="book">
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">Where the Forest Meets...</h5>
+                           <p class="card-text card__text">Glendy Vanderah</p>
+                           <p class="card-price card-price__best">15.99$</p>
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 9.125rem;">
+                        <img src="/images/best2.png" class="card-img-top w-100" alt="book">
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">Zombies’ Day</h5>
+                           <p class="card-text card__text">PopularMMOs</p>
+                           <p class="card-price card-price__best">13.00$</p>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+
+               <div class="row justify-content-end">
+
+                  <div class="col-lg-9 d-flex best-book-slider">
+
+                     <div class="card mx-3" style="width: 9.125rem;">
+                        <img src="/images/best6.png" class="card-img-top w-100" alt="book">
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">Without a Summer </h5>
+                           <p class="card-text card__text">Mary Robinette Kowal </p>
+                           <p class="card-price card-price__best">13.00$</p>
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 9.125rem;">
+                        <img src="/images/best7.png" class="card-img-top w-100" alt="book">
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">It All Comes Back to You</h5>
+                           <p class="card-text card__text">Beth Duke </p>
+                           <p class="card-price card-price__best">13.32$</p>
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 9.125rem;">
+                        <img src="/images/best8.png" class="card-img-top w-100" alt="book">
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">We Were the Lucky Ones</h5>
+                           <p class="card-text card__text">Georgia Hunter </p>
+                           <p class="card-price card-price__best">9.60$</p>
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 9.125rem;">
+                        <img src="/images/best9.png" class="card-img-top w-100" alt="book">
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">It's Not Supposed to...</h5>
+                           <p class="card-text card__text">Lysa TerKeurst </p>
+                           <p class="card-price card-price__best">12.50$</p>
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 9.125rem;">
+                        <img src="/images/best10.png" class="card-img-top w-100" alt="book">
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">Everything Is F*cked</h5>
+                           <p class="card-text card__text">Mark Manson</p>
+                           <p class="card-price card-price__best">13.00$</p>
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 9.125rem;">
+                        <img src="/images/best9.png" class="card-img-top w-100" alt="book">
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">It's Not Supposed to...</h5>
+                           <p class="card-text card__text">Lysa TerKeurst </p>
+                           <p class="card-price card-price__best">12.50$</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+
+      <!-- News and Articles -->
+      <section class="news">
+         <div class="container">
+            <div class="news__body">
+               <div class="news__heading">
+                  <h2 class="title news__title"> News and Articles</h2>
+                  <a href="#" class="news__link">See All</a>
+               </div>
+               <div class="row">
+
+                  <div class="card col-md-3 mx-3" style=" width: 18.375rem;">
+                     <img src=" /images/news1.png" class="card-img-top w-100 img-fluid" alt="book">
+                     <div class="card-body card__body">
+                        <a href="#" class="btn btn-primary news__btn news__btn1"><span>Awards</span></a>
+                        <h5 class="card-title card__title news-title">The National Book Award longlists </h5>
+                        <p class="card-text card__text">| September 21, 2020</p>
+                     </div>
+                  </div>
+
+                  <div class="card col-md-3 mx-3" style=" width: 18.375rem;">
+                     <img src="/images/news2.png" class="card-img-top w-100 img-fluid" alt="book">
+                     <div class="card-body card__body">
+                        <a href="#" class="btn btn-primary news__btn news__btn2"><span>Editors` Picks</span></a>
+                        <h5 class="card-title card__title news-title">Weekend reading </h5>
+                        <p class="card-text card__text">| September 21, 2020</p>
+                     </div>
+                  </div>
+
+                  <div class="card col-md-3 mx-3" style=" width: 18.375rem;">
+                     <img src="/images/news3.png" class="card-img-top w-100 img-fluid" alt="book">
+                     <div class="card-body card__body">
+                        <a href="#" class="btn btn-primary news__btn news__btn3"><span>Interview</span></a>
+                        <h5 class="card-title card__title news-title">The National Book Award longlists </h5>
+                        <p class="card-text card__text">| September 21, 2020</p>
+                     </div>
+                  </div>
+
+                  <div class="card col-md-3 ms-3" style=" width: 18.375rem;">
+                     <img src="/images/news4.png" class="card-img-top w-100 img-fluid" alt="book">
+                     <div class="card-body card__body">
+                        <a href="#" class="btn btn-primary news__btn news__btn1"><span>Awards</span></a>
+                        <h5 class="card-title card__title news-title">The best history books of September </h5>
+                        <p class="card-text card__text">| September 21, 2020</p>
+                     </div>
+                  </div>
+
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <!-- Related Books -->
+      <section class="related" id="related">
+         <div class="container">
+            <div class="related__body">
+
+               <h2 class="title related__title">Related Books</h2>
+               <div class="row">
+                  <div class="card-slider">
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book11.png" class="card-img-top w-100 card__img" alt="book">
+                        <div class="card__label card__label_popular"> Popular</div>
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">The Fated Sky: A Lady Astronaut Novel</h5>
+                           <p class="card-text card__text">Mary Robinette Kowal</p>
+
+                           <div class="card__block">
+                              <p class="card-price">3.00$</p>
+                              <div class="card__stars">
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star whiteStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#whiteStar"></use>
+                                 </svg>
+                              </div>
+                           </div>
+
+                           <div class="card__buttons">
+                              <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                              <a href="#" class="btn__save">
+                                 <svg class="save-btn" viewBox="0 0 14 18">
+                                    <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                 </svg>
+                              </a>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book12.png" class="card-img-top w-100 card__img" alt="book">
+                        <div class="card__label card__label_popular">Popular</div>
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">Glamour in Glass (Glamourist Histories... </h5>
+                           <p class="card-text card__text">Mary Robinette Kowal</p>
+
+                           <div class="card__block">
+                              <p class="card-price">20.00$</p>
+                              <div class="card__stars">
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star whiteStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#whiteStar"></use>
+                                 </svg>
+                              </div>
+                           </div>
+
+                           <div class="card__buttons">
+                              <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                              <a href="#" class="btn__save">
+                                 <svg class="save-btn" viewBox="0 0 14 18">
+                                    <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                 </svg>
+                              </a>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book13.png" class="card-img-top w-100" alt="book">
+                        <div class="card__label card__label_popular">Popular</div>
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">In an Absent Dream (Wayward Children...</h5>
+                           <p class="card-text card__text">Seanan McGuire</p>
+
+                           <div class="card__block">
+                              <p class="card-price">14.00$</p>
+                              <div class="card__stars">
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star whiteStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#whiteStar"></use>
+                                 </svg>
+                              </div>
+                           </div>
+
+                           <div class="card__buttons">
+                              <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                              <a href="#" class="btn__save">
+                                 <svg class="save-btn" viewBox="0 0 14 18">
+                                    <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                 </svg>
+                              </a>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book14.png" class="card-img-top w-100" alt="book">
+                        <div class="card__label card__label_popular">Popular</div>
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">Good Vibes, Good Life: How Self-Love Is the...</h5>
+                           <p class="card-text card__text">Vex King</p>
+
+                           <div class="card__block">
+                              <p class="card-price">31.00$</p>
+                              <div class="card__stars">
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star whiteStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#whiteStar"></use>
+                                 </svg>
+                              </div>
+                           </div>
+
+                           <div class="card__buttons">
+                              <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                              <a href="#" class="btn__save">
+                                 <svg class="save-btn" viewBox="0 0 14 18">
+                                    <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                 </svg>
+                              </a>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book15.png" class="card-img-top w-100" alt="book">
+                        <div class="card__label card__label_popular">Popular</div>
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">Get Out of Your Own Way: Overcoming... </h5>
+                           <p class="card-text card__text">Mark Goulston</p>
+
+                           <div class="card__block">
+                              <p class="card-price">12.40$</p>
+                              <div class="card__stars">
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star whiteStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#whiteStar"></use>
+                                 </svg>
+                              </div>
+                           </div>
+
+                           <div class="card__buttons">
+                              <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                              <a href="#" class="btn__save">
+                                 <svg class="save-btn" viewBox="0 0 14 18">
+                                    <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                 </svg>
+                              </a>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="card mx-3" style="width: 13.5rem;">
+                        <img src="/images/book3.png" class="card-img-top w-100" alt="book">
+                        <div class="card__label card__label_popular">Popular</div>
+                        <div class="card-body card__body">
+                           <h5 class="card-title card__title">American Dirt</h5>
+                           <p class="card-text card__text">Jeanine Cummins</p>
+
+                           <div class="card__block">
+                              <p class="card-price">16.00$</p>
+                              <div class="card__stars">
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star blackStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#blackStar"></use>
+                                 </svg>
+                                 <svg class="star whiteStar" viewBox="0 0 19 18">
+                                    <use xlink:href="sprite.svg#whiteStar"></use>
+                                 </svg>
+                              </div>
+                           </div>
+
+                           <div class="card__buttons">
+                              <a href="#" class="btn btn-primary card__btn"><span>Add to Cart</span></a>
+                              <a href="#" class="btn__save">
+                                 <svg class="save-btn" viewBox="0 0 14 18">
+                                    <use xlink:href="sprite.svg#save-btn-icon"></use>
+                                 </svg>
+                              </a>
+                           </div>
+
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+
+      <!-- FOOTER -->
+      <footer class="footer" id="footer">
+
+         <div class="container">
+            <div class="footer__body">
+
+               <div class="row ">
+
+                  <div class="col col-xl-3 col-sm-4">
+                     <div class="col__wrap mx-auto d-block">
+                        <h4 class="col__title">Popular Categories</h4>
+                        <ul class="col__list">
+                           <li class="col__item">
+                              <a href="#" class="col__link" title="Business & Money">Business & Money</a>
+                           </li>
+                           <li class="col__item">
+                              <a href="#" class="col__link" title="Children's Books">Children's Books</a>
+                           </li>
+                           <li class="col__item">
+                              <a href="#" class="col__link" title=" Computers & Technology">Computers & Technology</a>
+                           </li>
+                           <li class="col__item">
+                              <a href="#" class="col__link" title="Cookbooks, Food & Wine">Cookbooks, Food & Wine</a>
+                           </li>
+                           <li class="col__item">
+                              <a href="#" class="col__link" title="Crafts, Hobbies & Home">Crafts, Hobbies & Home</a>
+                           </li>
+                           <li class="col__item">
+                              <a href="#" class="col__link" title="Education & Teaching">Education & Teaching</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+
+                  <div class="col-xl-3  col-sm-8">
+                     <div class="col__wrap mx-auto d-block">
+
+                        <h4 class="col__title">Customer service</h4>
+                        <ul class="col__list">
+                           <li class="col__item">
+                              <a href="#" class="col__link" title="Help">Help</a>
+                           </li>
+                           <li class="col__item">
+                              <a href="#" class="col__link" title="FAQ">FAQ</a>
+                           </li>
+                           <li class="col__item">
+                              <a href="#" class="col__link" title="Secure payment">Secure payment</a>
+                           </li>
+                           <li class="col__item">
+                              <a href="#" class="col__link" title="Delivery">Delivery</a>
+                           </li>
+                           <li class="col__item">
+                              <a href="#" class="col__link" title="Returns & refunds">Returns & refunds</a>
+                           </li>
+                           <li class="col__item">
+                              <a href="#" class="col__link" title="Contact us">Contact us</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+
+                  <div class="col-xl-1 col-sm-4 me-xl-5 me-sm-0">
+                     <div class="col__wrap mx-auto d-block">
+
+                        <h4 class="col__title">Follow us</h4>
+                        <ul class="col__list">
+                           <li class="col__item">
+                              <a href="https://www.instagram.com/" class="col__link" Instagram="Help">Instagram</a>
+                           </li>
+                           <li class="col__item">
+                              <a href="https://www.facebook.com/" class="col__link" title="Facebook">Facebook</a>
+                           </li>
+                           <li class="col__item">
+                              <a href="https://twitter.com/" class="col__link" title="Twitter">Twitter</a>
+                           </li>
+                           <li class="col__item">
+                              <a href="https://www.pinterest.com/PinterestUA/" class="col__link"
+                                 title="Pinterest">Pinterest</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+
+                  <div class="col-xl-4 col-sm-8 col-last mb-3 mb-xl-0">
+                     <div class="col__wrap mx-auto d-block">
+
+                        <h4 class="col__title col__title_last">Subscribe to our Newsletter</h4>
+                        <p class="col__subtitle">No spam, we promise</p>
+
+                        <div class="col__list">
+
+                           <div class="input-group mb-3 inner-addon header__input">
+                              <input type="email" class="form-control header__input_search footer-input"
+                                 placeholder="example@mail.com" aria-label="Recipient's username"
+                                 aria-describedby="button-addon2">
+                              <button class="btn btn-outline-secondary input__btn footer-btn" type="button"
+                                 id="button-addon2">Subscribe</button>
+                           </div>
+
+                           <div class="footer__phone phone">
+                              <p class="phone__text text-footer">Calls are free of charge </p>
+                              <a class="phone__number phone" href="tel:0-800-600-505">0-800-600-505 </a>
+                           </div>
+                           <p class="phone__text text-footer">Working hours from 09:00 to 18:00</p>
+                        </div>
+
+                     </div>
+                  </div>
+
+               </div>
+
+            </div>
+
+         </div>
+         <div class="footer-line"></div>
+
+         <div class="subrow ">
+            <div class="container">
+               <div class="subrow__wrap d-flex flex-column justify-content-between flex-md-row  py-2 ">
+                  <p class="subrow__text text-footer">Copyright © 2020 Crocoblock, Inc. All rights reserved</p>
+                  <p class="subrow__text text-footer">Privacy Policy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     Terms</p>
+               </div>
+            </div>
+         </div>
+
+      </footer>
+   </main>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script src="./src/slick/slick.min.js"></script>
+   <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="./script.js"></script>
+</body>
+
+</html>
