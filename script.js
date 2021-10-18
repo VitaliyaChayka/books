@@ -96,3 +96,28 @@ $(document).ready(function(){
   });
   });
  
+////////////////////////////////// icon scrollup///////
+
+let upBtn = document.getElementById ('scrollup');
+window.addEventListener('scroll', function(){
+    if (wHeight < window.scrollY){
+        upBtn.classList.add('scrollup_active')
+    }
+    else {
+        upBtn.classList.remove('scrollup_active')
+
+    }
+})
+
+let wHeight = window.innerHeight;
+window.addEventListener('resize', function(){
+    wHeight = window.innerHeight;
+})
+
+////////////////////
+let allBooks = document.querySelector(".btn__all-books");
+allBooks.onclick = (event) => {
+  allBooks.style.border = 'none';
+  allBooks.style.backgroundColor = '#E6524B';
+}
+
