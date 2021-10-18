@@ -711,8 +711,18 @@ a.dropdown-item:active {
   background-image: url(../images/prev.png);
 }
 
+.carousel-control-prev-icon:active,
+.carousel-control-prev-icon:hover {
+  background-image: url(../images/Btn-prev.png);
+}
+
 .carousel-control-next-icon {
   background-image: url(../images/next.png);
+}
+
+.carousel-control-next-icon:active,
+.carousel-control-next-icon:hover {
+  background-image: url(../images/Btn-next.png);
 }
 
 .best-sellers {
@@ -891,9 +901,19 @@ a.dropdown-item:active {
   background: url(../images/prev.png) 0 0/100% no-repeat;
 }
 
+.card-slider .slick-arrow.slick-prev:active,
+.card-slider .slick-arrow.slick-prev:hover {
+  background: url(../images/Btn-prev.png) 0 0/100% no-repeat;
+}
+
 .card-slider .slick-arrow.slick-next {
   right: 27px;
   background: url(../images/next.png) 0 0/100% no-repeat;
+}
+
+.card-slider .slick-arrow.slick-next:active,
+.card-slider .slick-arrow.slick-next:hover {
+  background: url(../images/Btn-next.png) 0 0/100% no-repeat;
 }
 
 .card-slider .slick-dots {
