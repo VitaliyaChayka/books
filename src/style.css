@@ -160,19 +160,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: relative;
   z-index: 5;
   margin: 10px 0 0 0;
 }
 
 .nav__item {
-  margin: 0 1em;
+  margin: 0 3.9em 0 0;
+  letter-spacing: -0.3px;
 }
 
 @media (max-width: 980px) {
@@ -183,38 +178,6 @@ body {
 
 @media (max-width: 780px) {
   .nav__item {
-    margin: 1em 0;
-  }
-}
-
-.nav .nav__list li:first-child {
-  margin: 0 3.6em 0 0;
-}
-
-@media (max-width: 980px) {
-  .nav .nav__list li:first-child {
-    margin: 0 1.5em 0 0;
-  }
-}
-
-@media (max-width: 780px) {
-  .nav .nav__list li:first-child {
-    margin: 1em 0;
-  }
-}
-
-.nav .nav__list li:last-child {
-  margin: 0 0 0 3.6em;
-}
-
-@media (max-width: 980px) {
-  .nav .nav__list li:last-child {
-    margin: 0 0 0 1.5em;
-  }
-}
-
-@media (max-width: 780px) {
-  .nav .nav__list li:last-child {
     margin: 1em 0;
   }
 }
@@ -246,6 +209,10 @@ body {
 .header__logo:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.nav__list li:last-child {
+  margin: 0;
 }
 
 @media (max-width: 780px) {
@@ -380,7 +347,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 20px 0 0 0;
+  margin: 20px 0 0 12px;
 }
 
 .header__icons {
@@ -759,6 +726,7 @@ a.dropdown-item:active {
   text-align: left;
   color: #2E3741;
   margin: 70px 0 40px 0;
+  letter-spacing: -0.5px;
 }
 
 .card {
@@ -970,7 +938,6 @@ a.dropdown-item:active {
 
 .book-week__body {
   position: relative;
-  z-index: -10;
 }
 
 .book-week__sides {
@@ -1117,6 +1084,12 @@ a.dropdown-item:active {
   line-height: 1.6;
   color: #fff;
   cursor: pointer;
+}
+
+.left-side__btn:hover {
+  color: #fff;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .best-book {
