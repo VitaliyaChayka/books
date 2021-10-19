@@ -889,7 +889,7 @@ a.dropdown-item:active {
 
 .card-slider .slick-arrow {
   position: absolute;
-  top: 20%;
+  top: 22%;
   z-index: 2;
   font-size: 0;
   width: 40px;
